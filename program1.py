@@ -9,7 +9,8 @@ class Solution(object):
         
         for char in s:
             if char in bracket_format:
-                top = stack.pop() if stack else '#'
+                top = stack.pop()
+                if stack else '#'
                 if bracket_format[char] != top:
                     return False
             else:
