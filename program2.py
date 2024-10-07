@@ -17,7 +17,7 @@ class Solution(object):
         total_sum = 0 #by default value is 0 as empty string may also come.
         length = len(s)
         
-        for i in range(n):
+        for i in range(length):
             value = roman_data[s[i]]
             if i + 1 < length and value < roman_data[s[i + 1]]:
                 total_sum -= value
