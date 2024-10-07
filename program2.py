@@ -7,7 +7,7 @@ class Solution(object):
         roman_data = {
             'I': 1,
             'V': 5,
-            'X': 1,
+            'X': 10,
             'L': 50,
             'C': 100,
             'D': 500,
