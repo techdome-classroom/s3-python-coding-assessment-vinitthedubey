@@ -14,7 +14,7 @@ class Solution(object):
             'M': 1000
         }
         
-        total = 0 #by default value is 0 as empty string may also come.
+        total_sum = 0 #by default value is 0 as empty string may also come.
         n = len(s)
         
         for i in range(n):
