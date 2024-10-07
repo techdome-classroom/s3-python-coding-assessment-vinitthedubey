@@ -15,7 +15,7 @@ class Solution(object):
         }
         
         total_sum = 0 #by default value is 0 as empty string may also come.
-        n = len(s)
+        length = len(s)
         
         for i in range(n):
             value = roman_data[s[i]]
