@@ -9,8 +9,8 @@ class Solution(object):
         
         for char in s:
             if char in bracket_format:
-                top_element = stack.pop() if stack else '#'
-                if bracket_format[char] != top_element:
+                top = stack.pop() if stack else '#'
+                if bracket_format[char] != top:
                     return False
             else:
                 stack.append(char)
