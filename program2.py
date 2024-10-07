@@ -18,8 +18,8 @@ class Solution(object):
         n = len(s)
         
         for i in range(n):
-            value = roman_map[s[i]]
-            if i + 1 < n and value < roman_map[s[i + 1]]:
+            value = roman_data[s[i]]
+            if i + 1 < n and value < roman_data[s[i + 1]]:
                 total_sum -= value
             else:
                 total_sum += value
