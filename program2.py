@@ -14,7 +14,7 @@ class Solution(object):
             'M': 1000
         }
         
-        total = 0 #by default value is 0 as 
+        total = 0 #by default value is 0
         n = len(s)
         
         for i in range(n):
