@@ -5,12 +5,12 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        bracket_map = {')': '(', '}': '{', ']': '['}
+        bracket_format = {')': '(', '}': '{', ']': '['}
         
         for char in s:
-            if char in bracket_map:
+            if char in bracket_format:
                 top_element = stack.pop() if stack else '#'
-                if bracket_map[char] != top_element:
+                if bracket_format[char] != top_element:
                     return False
             else:
                 stack.append(char)
