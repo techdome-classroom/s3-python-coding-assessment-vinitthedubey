@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        bracket_format = {')': '(', '}': '{', ']': '['} # Dictionary with closing forms as keys and opening as value
+        bracket_format = {')': '(', '}': '{', ']': '['} # Dictionary with closing form as keys and opening as value
         
         for char in s:
             if char in bracket_format:
