@@ -5,18 +5,21 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        bracket_format = {')': '(', '}': '{', ']': '['} #dictionary with Closing form as key and open as value
+        bracket_format = {')': '(', '}': '{', ']': '['}
         
         for char in s:
             if char in bracket_format:
-                top = stack.pop() if stack else '#'
+                if stack:
+                    top = stack.pop()
+                else:
+                    top = None
+                
                 if bracket_format[char] != top:
                     return False
             else:
                 stack.append(char)
         
         return not stack
-
 
 
 
