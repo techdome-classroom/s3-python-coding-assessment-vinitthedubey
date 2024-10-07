@@ -17,10 +17,6 @@ class Solution(object):
         
         return not stack
 
-class Solution(object):
-    def isValid(self, s):
-        
-
 
 
 
