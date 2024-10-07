@@ -20,8 +20,8 @@ class Solution(object):
         for i in range(n):
             value = roman_map[s[i]]
             if i + 1 < n and value < roman_map[s[i + 1]]:
-                total -= value
+                total_sum -= value
             else:
-                total += value
+                total_sum += value
         
-        return total
+        return total_sum
