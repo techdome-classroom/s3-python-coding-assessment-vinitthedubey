@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        bracket_format = {')': '(', '}': '{', ']': '['} 
+        bracket_format = {')': '(', '}': '{', ']': '['} #dictionary with Closing form as key and open as value
         
         for char in s:
             if char in bracket_format:
@@ -20,7 +20,7 @@ class Solution(object):
 class Solution(object):
     def isValid(self, s):
         stack = []
-        bracket_format = {')': '(', '}': '{', ']': '['} #dictionary with Closing form as key and open as value
+        bracket_format = {')': '(', '}': '{', ']': '['}
         
         for char in s:
             if char in bracket_format:
